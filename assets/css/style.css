@@ -1,0 +1,60 @@
+body{
+	margin:0;
+}
+h1{
+	color:blue;
+	text-align: center;
+
+
+}
+.containerText{
+	display: flex;
+    justify-content: center;
+}
+p{
+	text-align: center;
+	width: 30%;
+	display: inline-block;
+	color: navy;
+}
+
+img{
+	width:100px;
+	height: 100px;
+	border:solid 2px lightblue;
+}
+
+.containerN1,
+.containerP,
+.containerN2,
+.containerT{
+	margin-top: 10px;
+	display: flex;
+    justify-content: center;
+}
+
+
+#numberBox,
+#numberBox2
+{	
+    width: 208px;
+    height: 60px;
+    background-color: #5a50cf;
+    text-align: center;
+    font-size: 55px;
+    color:white;
+}
+
+#numberBox2{
+	background-color: #78ece3;
+}
+
+#describeBox{
+	background-color: lightblue;
+	color:white;
+	width:417px;
+	height: 30px;
+	text-align: center;
+	padding-top: 5px;
+
+}
