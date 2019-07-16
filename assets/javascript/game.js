@@ -22,6 +22,10 @@ var imageNumG = $('#greenD').attr('value',greenRanValue);
 var imageNumY = $('#yellowD').attr('value',yellowRanValue);
 var imageNumP = $('#pinkD').attr('value',pinkRanValue);
 
+var win = 0;
+var lose = 0;
+$('#lose').text(lose);
+$('#win').text(win);
 
 // reset values!------------------------------------------
 function reset(){
@@ -49,33 +53,37 @@ console.log(pinkRanValue);
  imageNumP = $('#pinkD').attr('value',pinkRanValue);
 
 
- $('img').on('click',function(){
+//  $('img').on('click',function(){
 
 
-userValue = userValue + parseInt($(this).attr('value'));
-var updateuserValue = userValue; 
+// userValue = userValue + parseInt($(this).attr('value'));
+// var updateuserValue = userValue; 
 
-if(updateuserValue < comValue){
+// if(updateuserValue < comValue){
 
-showValue = $('#numberBox2').text(updateuserValue);
-console.log(updateuserValue);
+// showValue = $('#numberBox2').text(updateuserValue);
+// console.log(updateuserValue);
 
-}
+// }
 
-if(updateuserValue > comValue){
-	showValue = $('#numberBox2').text(updateuserValue);
-    console.log(updateuserValue);
-	alert('you lose!');
-	reset();
-}else if( updateuserValue === comValue){
-	showValue = $('#numberBox2').text(updateuserValue);
-    console.log(updateuserValue);
-	alert('you win!')
-	reset();
-}
+// if(updateuserValue > comValue){
+// 	showValue = $('#numberBox2').text(updateuserValue);
+//     console.log(updateuserValue);
+// 	alert( 'You lose! Your number is: '+ updateuserValue );
+// 	lose++;
+// 	$('#win').text(lose);
+// 	reset();
+// }else if( updateuserValue === comValue){
+// 	showValue = $('#numberBox2').text(updateuserValue);
+//     console.log(updateuserValue);
+// 	alert('you win! Your number is: '+ updateuserValue)
+// 	win++;
+// 	$('#win').text(win);
+// 	reset();
+// }
 
 
-});
+// });
 
 }
 
@@ -98,12 +106,17 @@ console.log(updateuserValue);
 if(updateuserValue > comValue){
 	showValue = $('#numberBox2').text(updateuserValue);
     console.log(updateuserValue);
-	alert('You lose! Your number is: ', updateuserValue );
+	alert('You lose! Your number is: '+ updateuserValue );
+	
+	lose++;
+	$('#lose').text(lose);
 	reset();
 }else if( updateuserValue === comValue){
 	showValue = $('#numberBox2').text(updateuserValue);
     console.log(updateuserValue);
-	alert('you win!')
+	alert('you win! Your number is: '+ updateuserValue)	
+	win ++;
+	$('#win').text(win);
 	reset();
 }
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <head>
 	<meta charset="UTF-8">
 	<title>Cristal collector</title>
@@ -8,16 +9,16 @@
 	<div class="containerText">
 	<p> There will be four crystals displayed as buttons on the page.
 
-   * The player will be shown a random number at the start of the game.
+   
 
-   * When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+   * When you clicks on a crystal, it will add a specific amount of points to your total score. 
 
-     * Your game will hide this amount until the player clicks a crystal.
-     * When they do click one, update the player's score counter.
+     * Your game will hide this amount until you click a crystal.
+     * When you click one, update your score counter.
 
-   * The player wins if their total score matches the random number from the beginning of the game.
+   * you win if your total score matches the random number from the beginning of the game.
 
-   * The player loses if their score goes above the random number.
+   * you lose if your score goes above the random number.
 </p>
 </div>
 
@@ -35,10 +36,16 @@
 
 <div class="containerT">
 <div id="describeBox">your total score is:</div>
+<div id="describeBox2">your history record is:</div>
 </div>
 
 <div class="containerN2">
 <div id="numberBox2" type="number" > </div>
+<div id="winloseBox" type="number" > 
+<p class="winlose">You win: <span id="win"></span></p>
+<p class="winlose">You lose: <span id="lose"></span></p>
+
+</div>
 </div>
 
 
